@@ -12,7 +12,6 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{Some helpers for things we need from CI.}
   spec.description   = %q{CI helpers. Unless you work with us, you won't care one bit.}
   spec.homepage      = "https://github.com/trice-imaging/ci_overhead"
-  spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.

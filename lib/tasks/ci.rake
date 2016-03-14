@@ -15,6 +15,7 @@ namespace :ci do
     Rake::Task['spec'].invoke
   end
 
+  # Requires rubocop + rubocop-checkstyle_formatter
   desc 'Run RuboCop with CI arguments'
   task :rubocop do
     require 'rubocop'
