@@ -36,7 +36,7 @@ namespace :ci do
     files = args[:output_files].split(' ') if args[:output_files]
     files ||= ['brakeman-output.tabs']
     run = Brakeman.run(app_path: '.', output_files: files, print_report: true, min_confidence: 1)
-    puts "Brakeman finished (#{run})"
+    puts "Brakeman finished (#{run.filtered_warnings.count} warnings, #{run.errors.length} errors, #{run.duration} seconds)"
   end
 
   desc 'Update the ruby advisory database and audit'
